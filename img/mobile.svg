@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 5.1.316 <https://api.sketch.io/> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" style="" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Ik1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXBQYXRoIjp7ImVuYWJsZWQiOnRydWUsInN0eWxlIjp7InN0cm9rZVN0eWxlIjoiYmxhY2siLCJsaW5lV2lkdGgiOjF9fSwiZXhwb3J0RFBJIjo3MiwiZXhwb3J0Rm9ybWF0IjoicG5nIiwiZXhwb3J0UXVhbGl0eSI6MC45NSwidW5pdHMiOiJweCIsIndpZHRoIjoyMTUsImhlaWdodCI6NDU4LCJwYWdlcyI6eyJsZW5ndGgiOjEsImRhdGEiOlt7IndpZHRoIjoyMTUsImhlaWdodCI6NDU4fV19fQ==" width="215" height="458" viewBox="0 0 215 458" sketchjs:version="5.1.316">
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(1.0017146357390223,0,0,1.0024271495880497,-2.2818237370755883,-1.2808216151855933)">
+	<g id="Slider" sketchjs:uid="1" style="">
+		<g id="iPhone Vertical" sketchjs:uid="2" style="">
+			<path id="Base" d="M29 1L190 1C204.91 1 217 13.09 217 28L217 432C217 446.91 204.91 459 190 459L29 459C14.09 459 2 446.91 2 432L2 28C2 13.09 14.09 1 29 1Z" sketchjs:uid="3" style="fill: rgb(242, 242, 242);"/>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(1,0,0,1,100.8747785188508,14.977873725314154)">
+	<g id="Slider" sketchjs:uid="1" style="">
+		<g id="iPhone Horizontal" sketchjs:uid="2" style="">
+			<g id="Cam" sketchjs:uid="3" style="">
+				<path id="Outer Circle" d="M10.49 6.27C10.49 8.72 8.51 10.7 6.07 10.7C3.63 10.7 1.66 8.72 1.66 6.27C1.66 3.82 3.63 1.84 6.07 1.84C8.51 1.84 10.49 3.82 10.49 6.27Z" sketchjs:uid="4" style="fill: rgb(216, 216, 216);"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(0.9998476951563913,0.017452406437284202,-0.017452406437284202,0.9998476951563913,103.86757071701885,17.89004395138182)">
+	<g id="Slider" sketchjs:uid="1" style="">
+		<g id="iPhone Horizontal" sketchjs:uid="2" style="">
+			<g id="Cam" sketchjs:uid="3" style="">
+				<path id="Red Dot" d="M5.04 3.27C5.04 4.36 4.16 5.24 3.07 5.24C1.99 5.24 1.11 4.36 1.11 3.27C1.11 2.18 1.99 1.3 3.07 1.3C4.16 1.3 5.04 2.18 5.04 3.27Z" sketchjs:uid="4" style="fill: rgb(235, 80, 85);"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(1.5926598195281475e-15,-1,1,1.5926598195281475e-15,88.08622899121399,41.923986442838924)">
+	<g id="Slider" sketchjs:uid="1" style="">
+		<g id="iPhone Horizontal" sketchjs:uid="2" style="">
+			<path id="Speaker" d="M6 3.5L6 34.5C6 35.88 4.88 37 3.5 37C2.12 37 1 35.88 1 34.5L1 3.5C1 2.12 2.12 1 3.5 1C4.88 1 6 2.12 6 3.5Z" sketchjs:uid="3" style="fill: rgb(172, 172, 172);"/>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(1,0,0,1,85.69746773203119,404.0823419100236)">
+	<g id="Slider" sketchjs:uid="1" style="">
+		<g id="iPhone Horizontal" sketchjs:uid="2" style="">
+			<g id="Home Button" sketchjs:uid="3" style="">
+				<path id="Circle" d="M43.19 22.19C43.19 33.75 33.85 43.12 22.32 43.12C10.79 43.12 1.44 33.75 1.44 22.19C1.44 10.63 10.79 1.26 22.32 1.26C33.85 1.26 43.19 10.63 43.19 22.19Z" sketchjs:uid="4" style="fill: rgb(250, 250, 250);"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(1,0,0,1,98.54221824057433,417.1167949102326)">
+	<g id="Slider" sketchjs:uid="1" style="">
+		<g id="iPhone Horizontal" sketchjs:uid="2" style="">
+			<g id="Home Button" sketchjs:uid="3" style="">
+				<path id="Square" d="M17.51 4.88L17.51 13.7C17.51 15.75 15.84 17.42 13.79 17.42L5 17.42C2.95 17.42 1.28 15.75 1.28 13.7L1.28 4.88C1.28 2.82 2.95 1.16 5 1.16L13.79 1.16C15.84 1.16 17.51 2.82 17.51 4.88ZM12.86 2.87L5.94 2.87C4.33 2.87 3.02 4.18 3.02 5.8L3.02 12.75C3.02 14.36 4.33 15.67 5.94 15.67L12.86 15.67C14.48 15.67 15.79 14.36 15.79 12.75L15.79 5.8C15.79 4.18 14.48 2.87 12.86 2.87Z" sketchjs:uid="4" style="fill: rgb(186, 186, 186); fill-rule: evenodd;"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(0.32309194499267063,0,0,0.8284434694111797,13.129237362479682,60.683253572883075)">
+	<g sketchjs:uid="1" style="">
+		<rect id="canvas_background" x="-1" y="-1" width="582" height="402" sketchjs:uid="2" style="fill: #fff;"/>
+	</g>
+	<g sketchjs:uid="3" style="">
+	</g>
+</g>
+</svg>

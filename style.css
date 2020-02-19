@@ -60,37 +60,110 @@ body{
     background-color: #494e62;
     border-radius: 50%;
 }
-.slider{
+.container{
     height: 594px;
     background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    padding: 0 112px;
+    position: relative;
+}
+.container:before{
+    content: '';
+    width: 16px;
+    height: 27px;
+    background: url(img/chev.svg) ;
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    /*transform: translate(-70px, 0);*/
+    cursor: pointer;
+
+}
+.container:after{
+    content: '';
+    width: 16px;
+    height: 27px;
+    background-image: url(img/chev.svg);
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 50%;
+    right: 42px;
+    cursor: pointer;
+}
+.phone{
+    height: 459px;
+    width: 216px;
+}
+
+.phone-horizontal{
+    background: url(img/phone.svg) no-repeat;
+    /*transform: translate(313px, -164px)*/
+    transform: rotate(90deg) translate(-15px, 146px);
+}
+.phone-vertical{
+    /*transform: rotate(-90deg) translate(-134px, -122px);*/
+    background: url(img/phone.svg) no-repeat;
+    transform: translate(-1px, -15px);
+}
+.slider{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 6px solid #ea676b;
+    /*flex-wrap: wrap;*/
 }
-.arrow{
-    height: 27px;
-    width: 16px;
-    padding: 0 40px;
-    flex: 16;
+.our_services{
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding-bottom: 31px;
 }
-.phone{
-    flex: 988;
-
+.services{
+    padding: 65px 40px 71px 41px;
+    background-color: #f2f2f2;
+}
+.services_description{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #767e9e;
+    margin-bottom: 51px;
+}
+.layout-3-column{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.phone-vertical{
-    padding: 0 0 28px 16px;
+.tools{
+    grid-column-gap: 20px;
+    grid-row-gap: 37px;
+}
+
+.tool h4{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+}
+.tool p{
+    line-height: 22px;
+    color: #767e9e;
+    padding-top: 15px;
 
 }
-.phone-horizontal{
-   align-self: center;
-    padding: 0 41px 28px 0;
+.tool-icon{
+    width: 59px;
+    height: 59px;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
 }
-/*.slider div{*/
-/*    border: 2px solid black;*/
-/*}*/
-.arrow-2{
-    transform: rotate(180deg);
+.tool-icon img{
+vertical-align: middle;
+    text-align: center;
+}
+
+.tool-description{
+    float: right;
 }

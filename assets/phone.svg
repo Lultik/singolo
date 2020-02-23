@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 459" width="216" height="459">
+	<defs>
+		<image width="17" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAAXNSR0IB2cksfwAAAKhQTFRFAAAAv7+/urq6urq6urq6urq6urq6urq6////v7+/urq6urq6urq6urq6u7u7urq6u7u7qqqqv7+/ubm5urq6ubm5ubm5ubm5urq6urq6urq6sbGxubm5ubm5u7u7gICAuLi4ubm5u7u7urq6urq6urq6u7u7urq6urq6urq6urq6urq6ubm5urq6urq6vLy8urq6urq6u7u7tra2urq6ubm5ubm5tra2MCCnswAAADh0Uk5TAAx+x93bv2cBCP/z9Jxt7EsDBHH8N6xbjHe0DUKHPAIkV4OboMtlO/66YFVq0u8T+etAHF1mVA4vPwZ/AAAAc0lEQVR4nLXKxw6CUAAF0VFQ4dobdrFX7IX//zM0oLzEtbM8GchkLTsply844FpSMZGSVIaKqrU6cY1mS208dUjrqkdfA0OGGr3EAMZ/Fv9HJoZMNWOuhfMFd6kV6422u31ccNDxBMFZaZfre73dH5+eIUQPqA0GXwhpJQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f2f2f2 } 
+		.shp1 { mix-blend-mode: exclusion;fill: #000000;stroke: #c7c8c7;stroke-width: 3 } 
+		.shp2 { fill: #d8d8d8 } 
+		.shp3 { fill: #eb5055 } 
+		.shp4 { fill: #acacac } 
+		.shp5 { fill: #fafafa } 
+		.shp6 { fill: #ffffff;stroke: #c7c8c7;stroke-width: 3 } 
+	</style>
+	<path id="форма 1" class="shp0" d="M0.04 432.02L-0.04 27.02C-0.04 12.09 12.03 0.02 26.96 0.01L188.96 -0.01C203.89 -0.02 215.96 12.05 215.96 26.98L216.04 431.98C216.04 446.91 203.97 458.98 189.04 458.99L27.04 459.01C12.11 459.02 0.04 446.95 0.04 432.02Z" />
+	<path id="форма 2" class="shp1" d="M-224 868L-224 409L-8 409L-8 868L-224 868Z" />
+	<path id="Слой 2" class="shp2" d="M104 20L104 20C104 17.79 105.79 16 108 16L108 16C110.21 16 112 17.79 112 20L112 20C112 22.21 110.21 24 108 24L108 24C105.79 24 104 22.21 104 20Z" />
+	<path id="Слой 2" class="shp3" d="M106 20L106 20C106 18.89 106.89 18 108 18L108 18C109.11 18 110 18.89 110 20L110 20C110 21.11 109.11 22 108 22L108 22C106.89 22 106 21.11 106 20Z" />
+	<path id="Слой 2" class="shp4" d="M90 39L90 37C90 35.89 90.89 35 92 35L125 35C126.11 35 127 35.89 127 37L127 39C127 40.11 126.11 41 125 41L92 41C90.89 41 90 40.11 90 39Z" />
+	<path id="Слой 3" class="shp5" d="M87 430L87 430C87 418.39 96.39 409 108 409L108 409C119.61 409 129 418.39 129 430L129 430C129 441.61 119.61 451 108 451L108 451C96.39 451 87 441.61 87 430Z" />
+	<use id="img1" href="#img1" transform="matrix(0,-1,1,0,100,438)"/>
+	<path id="Слой 6" class="shp6" d="M14 399L14 66L202 66L202 399L14 399Z" />
+</svg>

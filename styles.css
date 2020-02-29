@@ -30,13 +30,16 @@ body{
     line-height: 30px;
     text-align: justify;
     color: #767e9e;
+    margin-bottom: 44px;
+}
+.portfolio-desc{
     margin-bottom: 12px;
 }
 .section__wrapper{
     padding: 0 40px 70px 40px;
 }
 .portfolio{
-    height: 870px;
+    height: 871px;
     box-sizing: border-box;
     background: #2d303a;
     border-bottom: 6px solid #323746;
@@ -44,7 +47,7 @@ body{
 .tags{
     display: flex;
     justify-content: left;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
 }
 .tag{
     margin-right: 10px;
@@ -67,9 +70,6 @@ body{
     cursor: pointer;
     transition: all .3s;
 }
-.portfolio-img{
-
-}
 .portfolio-img__wrapper {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(4, 1fr);
@@ -85,51 +85,51 @@ body{
 }
 .portfolio-img__item:nth-child(1){
     background: url(assets/portfolio/1.svg);
-    background-position: -8px -10px;
+    background-position: -8px -11px;
 }
 .portfolio-img__item:nth-child(2){
     background: url(assets/portfolio/2.svg);
-    background-position: -82px -42px;
+    background-position: -82px -43px;
 }
 .portfolio-img__item:nth-child(3){
     background: url(assets/portfolio/3.svg);
-    background-position: -11px 0;
+    background-position: -11px -1px;
 }
 .portfolio-img__item:nth-child(4){
     background: url(assets/portfolio/4.svg);
-    background-position: -24px -1px;
+    background-position: -24px -2px;
 }
 .portfolio-img__item:nth-child(5){
     background: url(assets/portfolio/5.svg);
-    background-position: -10px -15px;
+    background-position: -10px -16px;
 }
 .portfolio-img__item:nth-child(6){
     background: url(assets/portfolio/6.svg);
-    background-position: -16px -3px;
+    background-position: -16px -4px;
 }
 .portfolio-img__item:nth-child(7){
     background: url(assets/portfolio/7.svg);
-    background-position: -31px -38px;
+    background-position: -31px -39px;
 }
 .portfolio-img__item:nth-child(8){
     background: url(assets/portfolio/8.svg);
-    background-position: -24px -31px;
+    background-position: -24px -32px;
 }
 .portfolio-img__item:nth-child(9){
     background: url(assets/portfolio/9.svg);
-    background-position: -16px -1px;
+    background-position: -16px -2px;
 }
 .portfolio-img__item:nth-child(10){
     background: url(assets/portfolio/10.svg);
-    background-position: -141px -112px;
+    background-position: -141px -113px;
 }
 .portfolio-img__item:nth-child(11){
     background: url(assets/portfolio/11.svg);
-    background-position: -144px -174px;
+    background-position: -144px -175px;
 }
 .portfolio-img__item:nth-child(12){
     background: url(assets/portfolio/12.svg);
-    background-position: -36px -59px;
+    background-position: -36px -60px;
 }
 .about{
     height: 734px;
@@ -140,4 +140,61 @@ body{
 .layout-3-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.employees{
+    grid-gap: 19px;
+}
+.employee-photo__item{
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: none;
+    object-position: 0 0;
+}
+.employee-name{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    white-space: nowrap;
+    padding-top: 17px;
+    letter-spacing: -0.2px;
+}
+.employee-about{
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    padding: 10px 0 22px 0;
+    letter-spacing: -0.1px;
+    text-align: justify;
+}
+.employee-smm{
+    display: grid;
+    grid-gap: 8px;
+    grid-auto-flow: column;
+    justify-content: left;
+    box-sizing: border-box;
+    padding-left: 1px;
+}
+.smm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+}
+.smm-icon{
+    filter: invert(43%) sepia(2%) saturate(3776%) hue-rotate(191deg) brightness(98%) contrast(94%);
+}
+.smm:hover{
+    background: #666d89;
+    cursor: pointer;
+}
+.smm:hover > .smm-icon{
+    filter: invert(96%) sepia(25%) saturate(6913%) hue-rotate(181deg) brightness(120%) contrast(90%);
+    transition: all .3s;
 }

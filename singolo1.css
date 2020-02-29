@@ -95,9 +95,9 @@ body{
 .phone{
     height: 459px;
     width: 216px;
-    -webkit-box-shadow: 25px 25px 0px 0px rgba(206,93,86,1);
-    -moz-box-shadow: 25px 25px 0px 0px rgba(206,93,86,1);
-    box-shadow: 25px 25px 0px 0px rgba(206,93,86,1);
+    -webkit-box-shadow: 25px 25px 0 0 rgba(206,93,86,1);
+    -moz-box-shadow: 25px 25px 0 0 rgba(206,93,86,1);
+    box-shadow: 25px 25px 0 0 rgba(206,93,86,1);
     border-radius: 25px;
 }
 
@@ -105,9 +105,9 @@ body{
     background: url(assets/phone.svg) no-repeat;
 
     transform: rotate(90deg) translate(-15px, 146px);
-    -webkit-box-shadow: 25px -25px 0px 0px rgba(206,93,86,1);
-    -moz-box-shadow: 25px -25px 0px 0px rgba(206,93,86,1);
-    box-shadow: 25px -25px 0px 0px rgba(206,93,86,1);
+    -webkit-box-shadow: 25px -25px 0 0 rgba(206,93,86,1);
+    -moz-box-shadow: 25px -25px 0 0 rgba(206,93,86,1);
+    box-shadow: 25px -25px 0 0 rgba(206,93,86,1);
 }
 .phone-vertical{
     /*transform: rotate(-90deg) translate(-134px, -122px);*/
@@ -121,18 +121,20 @@ body{
     justify-content: space-between;
     /*flex-wrap: wrap;*/
 }
-.our_services{
+.section-name{
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
     font-weight: 900;
-    padding-bottom: 26px;
+    padding: 68px 0 27px 0;
+}
+.section{
+    padding: 0 40px 71px 41px;
 }
 .services{
-    padding: 70px 40px 71px 41px;
     background-color: #f2f2f2;
 }
-.services-description{
+.section-desc{
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;

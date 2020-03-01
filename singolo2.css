@@ -50,17 +50,19 @@ body{
     margin-bottom: 19px;
 }
 .tag{
+    font-size: 12px;
     margin-right: 10px;
     padding: 0 7px;
     box-sizing: border-box;
     border: 1px solid #666d89;
     border-radius: 5px;
-    background: #2d303a;
+    background: transparent;
     line-height: 20px;
     color: #767e9e;
     letter-spacing: -0.25px;
+    text-decoration: none;
 }
-.tag-selected{
+.tag-active{
     border: 1px solid #c5c5c5;
     color: #dedede;
 }
@@ -142,7 +144,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .employees{
-    grid-gap: 19px;
+    grid-gap: 18px;
 }
 .employee-photo__item{
     display: block;

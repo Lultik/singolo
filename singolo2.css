@@ -190,14 +190,15 @@ body{
     border: 1px solid #666d89;
     border-radius: 50%;
 }
-.smm-icon{
-    filter: invert(43%) sepia(2%) saturate(3776%) hue-rotate(191deg) brightness(98%) contrast(94%);
+.fa{
+    font-size: 1.4rem;
+    color: #666d89;
 }
 .smm:hover{
-    background: #666d89;
     cursor: pointer;
+    background: #666d89;
+    transition: 0.3s
 }
-.smm:hover > .smm-icon{
-    filter: invert(96%) sepia(25%) saturate(6913%) hue-rotate(181deg) brightness(120%) contrast(90%);
-    transition: all .3s;
+.smm:hover .fa{
+    color: #f0d8d9;
 }

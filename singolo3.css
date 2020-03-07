@@ -112,7 +112,6 @@ body{
     line-height: 22px;
 }
 .contact-desc{
-
     padding: 10px 0 20px;
 }
 .fa{
@@ -164,6 +163,11 @@ body{
     height: 30px;
     border: 1px solid #666d89;
     border-radius: 50%;
+}
+.smm:hover{
+    cursor: pointer;
+    background: #f0d8d9;
+    transition: 0.3s
 }
 .copyright{
     padding: 31px 0 0 2px;

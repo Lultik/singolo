@@ -44,18 +44,27 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.quote_form{
+    display: grid;
+    grid-template-columns: 620px auto;
+    grid-gap: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
 .input{
-    width: 604px;
-    height: 38px;
+
+    /*height: 38px;*/
     border: 0;
     border-radius: 5px;
     background-color: #d6564f;
     font-size: 12px;
     line-height: 22px;
     font-family: Lato;
-    color: #f48c8f;
+    color: #fff;
     margin-bottom: 16px;
-    padding-left: 15px;
+    padding: 8px 15px;
 }
 .input::placeholder{
     color: #f48c8f;
@@ -69,9 +78,9 @@ body{
 
 
 .input-desc{
-    height: 195px;
+    /*height: 195px;*/
     resize: none;
-    padding-top: 7px;
+    padding: 7px 15px 19px;
 }
 .input-button {
     align-self: center;
@@ -90,7 +99,7 @@ body{
 }
 
 .contacts{
-    padding-left: 21px;
+
     text-align: justify;
     letter-spacing: -0.1px;
 }
@@ -103,6 +112,7 @@ body{
     line-height: 22px;
 }
 .contact-desc{
+
     padding: 10px 0 20px;
 }
 .fa{

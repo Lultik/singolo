@@ -16,21 +16,21 @@
         <a href="#" class="logo">
             <h1 class="logo-title">SINGOLO<span class="logo-star">*</span></h1>
         </a>
-        <nav class="header-navigation">
+        <nav id="menu" class="header-navigation">
             <ul class="navigation">
-                <li>HOME</li>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                <li><a href="#slider-container">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#quote">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 </div>
 
 <div class="wrapper">
-    <div class="slider-container">
-        <section class="slider">
+    <div id="slider-container" class="slider-container">
+        <section id="slider" class="slider">
             <div class="phone phone-vertical">
                 <div class="phone-screen phone-screen-vertical"></div>
             </div>
@@ -42,7 +42,7 @@
 </div>
 
 <div class="wrapper">
-    <section class="section__wrapper services">
+    <section id="services" class="section__wrapper services">
         <h2 class="section-name">Our Services</h2>
         <p class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layout-3-column tools">
@@ -108,7 +108,7 @@
 </div>
 
 <div class="wrapper">
-    <section class="section__wrapper portfolio">
+    <section id="portfolio" class="section__wrapper portfolio">
         <h2 class="section-name">Portfolio</h2>
         <p class="section-desc">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         <div class="tags">
@@ -135,7 +135,7 @@
 </div>
 
 <div class="wrapper">
-    <section class="section__wrapper about">
+    <section id="about" class="section__wrapper about">
         <h2 class="section-name">About Us</h2>
         <p class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layout-3-column employees">
@@ -225,15 +225,15 @@
 </div>
 
 <div class="wrapper">
-    <section class="section__wrapper quote">
+    <section id="quote" class="section__wrapper quote">
         <h2 class="section-name">Get a Quote</h2>
         <p class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="communication">
             <div class="quote_form">
                 <form action="#" method="post" class="form">
-                    <input type="text" class="input input-name" name="Name" minlength="4" maxlength="20" placeholder="Name (Required)" required></p>
-                    <input type="email" class="input input-mail" name="mail" placeholder="Email (Required)" required></p>
-                    <input type="text" class="input input-subject" name="subject" placeholder="Subject"></p>
+                    <input type="text" class="input input-name" name="Name" minlength="4" maxlength="20" placeholder="Name (Required)" required>
+                    <input type="email" class="input input-mail" name="mail" placeholder="Email (Required)" required>
+                    <input type="text" class="input input-subject" name="subject" placeholder="Subject">
                     <textarea rows="8" name="describe" class="input input-desc"  placeholder="Describe your project in detail..."></textarea>
                     <input type="submit" class="input-button" name="input-button" value="Submit">
                 </form>
@@ -253,7 +253,14 @@
             </div>
         </div>
     </section>
-</div>
+
+
+    <div id="message-block" class="hidden">
+        <div id="message">
+            Text <span class="subject"></span>
+        </div>
+    </div>
+
 
 <div class="wrapper">
     <footer class="footer">
@@ -278,5 +285,6 @@
         </div>
     </footer>
 </div>
+<script src="index.js"></script>
 </body>
 </html>

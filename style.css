@@ -230,11 +230,13 @@ a.nav_active{
     margin-bottom: 12px;
 }
 .portfolio{
-    height: 869px;
     box-sizing: border-box;
     background: #2d303a;
     border-bottom: 6px solid #323746;
     color: #666d89;
+}
+button.tag{
+    outline: none;
 }
 .tags{
     display: flex;
@@ -254,7 +256,7 @@ a.nav_active{
     letter-spacing: -0.25px;
     text-decoration: none;
 }
-.tag-active{
+.tag_active{
     border: 1px solid #c5c5c5;
     color: #dedede;
 }
@@ -273,6 +275,10 @@ a.nav_active{
     width: 220px;
     height: 187px;
     background-color: #464b5e;
+}
+.img_active{
+    box-sizing: border-box;
+    border: 5px solid #f06c64
 }
 .portfolio-img__item:nth-child(n+13) {
     display: none;

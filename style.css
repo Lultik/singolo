@@ -52,11 +52,11 @@ a{
     justify-content: space-between;
     padding: 0 24px 0 39px;
 }
-/*#sticky {*/
-/*    position: sticky;*/
-/*    top: 0;*/
-/*    z-index: 1;*/
-/*}*/
+#sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
 .logo{
     text-decoration: none;
@@ -250,10 +250,14 @@ a.nav_active{
 .phone-screen:hover{
     cursor: pointer;
 }
-.second_slide-screen{
+#second-slide-screen{
     width: 200px;
     height: 354px;
-
+    position: absolute;
+    /* object-position: 0px 0px; */
+    top: 44px;
+    left: 1415px;
+    background: url("assets/phone-vertical-display.svg")
 }
 .phone-screen-vertical{
     background: url(assets/vertical-screen.svg) no-repeat;
@@ -264,7 +268,7 @@ a.nav_active{
     background-position: -119px -125px;
 }
 .screen-off{
-    background: black;
+    background: black !important;
     transition: .3s;
 }
 

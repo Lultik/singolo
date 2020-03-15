@@ -22,12 +22,11 @@ SCREEN.querySelectorAll('.phone-screen').forEach(el => {
             SCREEN.querySelectorAll('.phone-screen-vertical').forEach(el => {
                 el.classList.toggle('screen-off')
             });
-        }
-        if(event.target.classList.contains('phone-screen-horizontal')){
+        } else if(event.target.classList.contains('phone-screen-horizontal')){
             SCREEN.querySelectorAll('.phone-screen-horizontal').forEach(el => {
                 el.classList.toggle('screen-off')
             });
-        }
+        } else event.target.classList.toggle('screen-off')
     })
 });
 

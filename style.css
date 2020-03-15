@@ -250,7 +250,7 @@ a.nav_active{
 .phone-screen:hover{
     cursor: pointer;
 }
-#second-slide-screen{
+.phone-screen.second-slide-screen{
     width: 200px;
     height: 354px;
     position: absolute;

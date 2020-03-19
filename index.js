@@ -22,12 +22,6 @@ function handleIndicator(el) {
 
     el.classList.add('nav_active');
 }
-ITEMS.forEach(item => {
-    item.addEventListener("click", event => {
-        handleIndicator(event.target);
-    });
-    item.classList.contains('nav_active') && handleIndicator(item);
-});
 
 window.addEventListener('scroll', event => {
     let fromTop = window.scrollY + headerHeight;

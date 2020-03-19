@@ -4,16 +4,45 @@ const TAGS = document.getElementById('tags');
 const PICTURE = document.getElementById('portfolio-img');
 const SUBMIT_BUTTON_CLOSE = document.getElementById('submit-button-close');
 const FORM = document.getElementById('form');
+const INDICATOR = document.querySelector(".nav-indicator");
+const ITEMS = document.querySelectorAll(".nav_item");
+const headerHeight =document.querySelector('.header').offsetHeight;
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
-// select menu navigation
-MENU.addEventListener('click', (event) => {
-    MENU.querySelectorAll('a').forEach(el =>
-        el.classList.remove('nav_active'));
-        event.target.classList.add('nav_active')
+function handleIndicator(el) {
+    ITEMS.forEach(item => {
+        item.classList.remove('nav_active');
+    });
+
+    INDICATOR.style.width = `${el.offsetWidth}px`;
+    INDICATOR.style.left = `${el.offsetLeft}px`;
+
+    el.classList.add('nav_active');
+}
+ITEMS.forEach(item => {
+    item.addEventListener("click", event => {
+        handleIndicator(event.target);
+    });
+    item.classList.contains('nav_active') && handleIndicator(item);
+});
+
+window.addEventListener('scroll', event => {
+    let fromTop = window.scrollY + headerHeight;
+
+    ITEMS.forEach(link => {
+        let section = document.querySelector(link.hash);
+
+        if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
+            link.classList.add('nav_active');
+            link.classList.contains('nav_active') && handleIndicator(link);
+        } else {
+            link.classList.remove('nav_active');
+        }
+    });
+
 });
 
 SCREEN.querySelectorAll('.phone-screen').forEach(el => {
@@ -30,22 +59,13 @@ SCREEN.querySelectorAll('.phone-screen').forEach(el => {
     })
 });
 
-// switch on/off phone screen
-// SCREEN.querySelectorAll('.phone-screen').forEach(el => {
-//     el.addEventListener('click', event => {
-//         event.target.classList.toggle('screen-off')
-//     })
-// });
-
 // selecting tags and shake imgs
 TAGS.addEventListener('click', (event) => {
     TAGS.querySelectorAll('button').forEach(el =>
         el.classList.remove('tag_active'));
     if (event.target.attributes.value){
         event.target.classList.add('tag_active');
-        PICTURE.querySelectorAll('.portfolio-img__item').forEach((el) => {
-            el.style.order = getRandomInt(12)
-        })
+        PICTURE.appendChild(PICTURE.children[0]);
     }
 });
 

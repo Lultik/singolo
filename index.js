@@ -1,19 +1,14 @@
-const MENU = document.getElementById('menu');
 const SCREEN = document.getElementById('slider');
 const TAGS = document.getElementById('tags');
 const PICTURE = document.getElementById('portfolio-img');
 const SUBMIT_BUTTON_CLOSE = document.getElementById('submit-button-close');
 const FORM = document.getElementById('form');
 const INDICATOR = document.querySelector(".nav-indicator");
-const ITEMS = document.querySelectorAll(".nav_item");
-const headerHeight =document.querySelector('.header').offsetHeight;
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
+const NAV_ITEMS = document.querySelectorAll(".nav_item");
+const headerHeight = document.querySelector('.header').offsetHeight;
 
 function handleIndicator(el) {
-    ITEMS.forEach(item => {
+    NAV_ITEMS.forEach(item => {
         item.classList.remove('nav_active');
     });
 
@@ -25,8 +20,7 @@ function handleIndicator(el) {
 
 window.addEventListener('scroll', event => {
     let fromTop = window.scrollY + headerHeight;
-
-    ITEMS.forEach(link => {
+    NAV_ITEMS.forEach(link => {
         let section = document.querySelector(link.hash);
 
         if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
@@ -35,21 +29,31 @@ window.addEventListener('scroll', event => {
         } else {
             link.classList.remove('nav_active');
         }
-    });
 
+        if( window.scrollY === document.body.offsetHeight - window.innerHeight){
+            link.classList.add('nav_active');
+            link.classList.contains('nav_active') && handleIndicator(link);
+        }
+    })
 });
 
-SCREEN.querySelectorAll('.phone-screen').forEach(el => {
+SCREEN.querySelectorAll('.phone').forEach(el => {
     el.addEventListener('click', event => {
-        if(event.target.classList.contains('phone-screen-vertical')){
+
+        let phoneScreen =
+            event.target.classList.contains('phone-screen') ?
+                event.target :
+                event.target.querySelector('.phone-screen');
+
+        if(phoneScreen.classList.contains('phone-screen-vertical')){
             SCREEN.querySelectorAll('.phone-screen-vertical').forEach(el => {
                 el.classList.toggle('screen-off')
             });
-        } else if(event.target.classList.contains('phone-screen-horizontal')){
+        } else if(phoneScreen.classList.contains('phone-screen-horizontal')){
             SCREEN.querySelectorAll('.phone-screen-horizontal').forEach(el => {
                 el.classList.toggle('screen-off')
             });
-        } else event.target.classList.toggle('screen-off')
+        } else phoneScreen.classList.toggle('screen-off')
     })
 });
 
@@ -59,7 +63,10 @@ TAGS.addEventListener('click', (event) => {
         el.classList.remove('tag_active'));
     if (event.target.attributes.value){
         event.target.classList.add('tag_active');
-        PICTURE.appendChild(PICTURE.children[0]);
+        for(let i = PICTURE.children.length; i >= 0; i--){
+            PICTURE.appendChild(PICTURE.children[Math.random() * i | 0]);
+        }
+
     }
 });
 

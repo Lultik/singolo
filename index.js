@@ -7,6 +7,24 @@ const INDICATOR = document.querySelector(".nav-indicator");
 const NAV_ITEMS = document.querySelectorAll(".nav_item");
 const headerHeight = document.querySelector('.header').offsetHeight;
 
+
+
+window.addEventListener('resize', () => {
+   let docWidth = window.innerWidth;
+
+   document.querySelectorAll('.phone').forEach(el => {
+       if(docWidth <= 1024){
+           el.style.width = `${21}vw`
+           el.style.height = `${45}vw`;
+       } else {
+           el.style.width = `216px`
+           el.style.height = `459px`;
+       }
+
+   })
+
+});
+
 function handleIndicator(el) {
     NAV_ITEMS.forEach(item => {
         item.classList.remove('nav_active');
@@ -18,7 +36,7 @@ function handleIndicator(el) {
     el.classList.add('nav_active');
 }
 
-window.addEventListener('scroll', event => {
+window.addEventListener('scroll', () => {
     let fromTop = window.scrollY + headerHeight;
     NAV_ITEMS.forEach(link => {
         let section = document.querySelector(link.hash);

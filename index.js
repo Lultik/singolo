@@ -90,10 +90,10 @@ TAGS.addEventListener('click', (event) => {
 
 // bordering imgs
 PICTURE.addEventListener('click', event => {
-    PICTURE.querySelectorAll('.portfolio-img__item').forEach(el => {
+    PICTURE.querySelectorAll('.portfolio-img__item > img').forEach(el => {
         el.classList.remove('img_active')
     });
-    if ( event.target.classList.contains('portfolio-img__item') )
+    if ( event.target.parentElement.classList.contains('portfolio-img__item') )
         event.target.classList.add('img_active');
 });
 

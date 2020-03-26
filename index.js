@@ -7,24 +7,6 @@ const INDICATOR = document.querySelector(".nav-indicator");
 const NAV_ITEMS = document.querySelectorAll(".nav_item");
 const headerHeight = document.querySelector('.header').offsetHeight;
 
-
-
-window.addEventListener('resize', () => {
-   let docWidth = window.innerWidth;
-
-   document.querySelectorAll('.phone').forEach(el => {
-       if(docWidth <= 1024){
-           el.style.width = `${21}vw`
-           el.style.height = `${45}vw`;
-       } else {
-           el.style.width = `216px`
-           el.style.height = `459px`;
-       }
-
-   })
-
-});
-
 function handleIndicator(el) {
     NAV_ITEMS.forEach(item => {
         item.classList.remove('nav_active');
@@ -202,4 +184,19 @@ new Carousel({
     "wrap": ".js-carousel__wrap",
     "prev": ".js-carousel__prev",
     "next": ".js-carousel__next"
+});
+
+const HEADER = document.getElementById('header')
+const BURGER_MENU = document.querySelector('.burger-menu_button');
+const NAVIGATION = document.getElementById('menu');
+
+HEADER.addEventListener('click', event => {
+    if(event.target.parentElement === BURGER_MENU) {
+        event.preventDefault();
+        NAVIGATION.classList.toggle('nav--active');
+        BURGER_MENU.classList.toggle('burger-menu--active');
+    } else {
+        NAVIGATION.classList.remove('nav--active');
+        BURGER_MENU.classList.remove('burger-menu--active');
+    }
 });

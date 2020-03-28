@@ -54,7 +54,7 @@ a{
     justify-content: space-between;
     padding: 0 24px 0 39px;
 }
-#sticky {
+#fixed-header {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -62,6 +62,9 @@ a{
 
 .logo{
     text-decoration: none;
+}
+nav > .logo{
+    display: none;
 }
 .logo-title{
     font-size: 25px;
@@ -711,6 +714,9 @@ button.tag{
         display: block;
         position: relative;
         z-index: 160;
+    }
+    nav > .logo{
+        display: block;
     }
     .logo{
         position: absolute;
